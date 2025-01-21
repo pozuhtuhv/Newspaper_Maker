@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #202124;
+  color: #bfbfbf;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative; /* 자식 요소들이 절대 위치를 사용할 수 있도록 설정 */
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.Nokduro {
+  position: absolute; /* 절대 위치로 설정 */
+  bottom: 10px; /* 화면 하단에서 10px 만큼 떨어지게 */
+  left: 10px; /* 화면 왼쪽에서 10px 만큼 떨어지게 */
+  font-size: 16px; /* 텍스트 크기 */
+  color: #bfbfbf; /* 텍스트 색상 */
+  font-family: "Arial", sans-serif; /* 글꼴 설정 */
+}
+
+.canvas-container {
+  width: 767px;
+  height: 1012px;
+  position: relative;
+  border: 1px solid #ddd;
+  background-color: #202124;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #99c3ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button:hover:not(:disabled) {
+  background-color: #99c3ff;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Summer Car Newspaper Maker</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @font-face {
+      font-family: "JejuMyeongjo";
+      src: url("JejuMyeongjo.ttf") format("truetype");
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <h1>My Summer Car Newspaper Maker</h1>
+      <label for="image1">이미지 1 업로드:</label>
+      <input type="file" id="image1" accept="image/*">
+      
+      <label for="image2">이미지 2 업로드:</label>
+      <input type="file" id="image2" accept="image/*">
+
+      <label for="text1">텍스트 1:</label>
+      <textarea id="text1" placeholder="텍스트를 입력하세요"></textarea>
+      
+      <label for="text2">텍스트 2:</label>
+      <textarea id="text2" placeholder="텍스트를 입력하세요"></textarea>
+
+      <button id="generate">짤 생성하기</button>
+      <button id="download" disabled>이미지 다운로드</button>
+    </div>
+    <div class="Nokduro">
+      "벌에 쏘여 사망한 두로의 7호기를 추모하며.."
+    </div>
+    <div id="meme-container" class="canvas-container">
+      <!-- 캔버스가 여기에 추가됩니다 -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
