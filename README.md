@@ -1,2 +1,3 @@
 # Newspaper_Maker
 벌에 쏘여 사망한 7호기를 추모하며...
+![ex_img](ex_image.png)
