@@ -43,7 +43,7 @@ generateButton.addEventListener("click", async () => {
       image1.src = URL.createObjectURL(image1Input);
       await new Promise((resolve) => {
         image1.onload = () => {
-          const imgX = 246, imgY = 249, imgWidth = 495, imgHeight = 263;
+          const imgX = 246, imgY = 249, imgWidth = 495, imgHeight = 273;
           ctx.drawImage(image1, imgX, imgY, imgWidth, imgHeight);
           applyGrayscale(ctx, imgX, imgY, imgWidth, imgHeight); // 흑백 처리
           resolve();
